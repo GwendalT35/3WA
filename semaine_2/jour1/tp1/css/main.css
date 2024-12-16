@@ -1,0 +1,16 @@
+:root {
+    --priority-high: red;
+    --priority-medium: green;
+    --priority-low: blue;
+}
+
+
+.highPriority {
+    color: var(--priority-high);
+}
+.mediumPriority {
+    color: var(--priority-medium);
+}
+.lowPriority {
+    color: var(--priority-low);
+}

@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Global reset and responsive setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container styling */
+#formContainer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Required fields and invalid styling */
+input:required {
+    border: 2px solid #007bff;
+}
+
+input:invalid {
+    border: 2px solid #ff4d4d;
+}
+
+input:valid {
+    border: 2px solid #28a745;
+}
+
+/* Accessibility: focus outlines */
+input:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #formContainer {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[list] {
+        font-size: 0.9rem;
+    }
+
+    input[type="button"] {
+        font-size: 0.9rem;
+    }
+}

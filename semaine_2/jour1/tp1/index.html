@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <section class="notification" id="notification">
+        <p></p>
+    </section>
+    <section id="list"></section>
+    <section id="form">
+        <form onsubmit="appendTask(event)">
+            <input type="text" name="taskText" id="inputTaskText">
+            <select name="priority" id="priority">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <input type="submit" value="Supprimer toutes les tâches"  onclick="deleteSelectedTask();">
+    </section>
+</body>
+
+</html>

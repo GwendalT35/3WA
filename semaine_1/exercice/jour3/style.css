@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+header .logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero .content {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero .content h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.hero .content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background: #e9f1f7;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.content-block {
+    width: 45%;
+}
+
+.content-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}

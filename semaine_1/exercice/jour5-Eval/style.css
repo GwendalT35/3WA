@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    /* margin-left: calc((20*10vw)/100); */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --basic-green: #11682c;
+    --basic-green-hover: #14632D;
+    --dark: #1e2528;
+    --description-grey: #888888;
+    --light-grey: #555555;
+    --dark-grey: #263a41;
+    --form-grey: #999999;
+    --border: #e2e5ea;
+    --bg-form: #fff9f8;
+    --bg-quotes: #f8fff8;
+    --idle-btn: #30383b;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+} */
+
+input[type="button"] {
+    color: white;
+    font-family: 'Roboto', medium;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+}
+
+input[type="button"]:not(.orderBtn) {
+    background-color: var(--basic-green);
+}
+
+
+/* Style pour le header */
+header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 64px;
+}
+
+/* Style pour la navigation */
+nav {
+    position: relative;
+    right: 35rem;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-family: 'Roboto', medium;
+    font-size: 16px;
+}
+
+/* Image de décoration */
+#decoImg {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    pointer-events: none;
+    /* Empêche l'image d'interagir avec les clics */
+}
+
+
+/* ########### */
+/* main */
+/* dineWithUs */
+/* ########### */
+
+#dineWithUs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 187px;
+    left: 320px;
+    width: 451px;
+    gap: 15px;
+    /* Ajoute de l'espace entre les éléments */
+    padding: 20px;
+
+}
+
+#dineWithUs>p:nth-child(1) {
+    color: var(--basic-green);
+    font-family: 'Rufina', regular;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* Correspond à "FRESH RESTAURANT" */
+    margin: 0;
+}
+
+#dineWithUs>p:nth-child(2) {
+    color: var(--dark);
+    font-family: 'Rufina', bold;
+    font-size: 60px;
+    margin: 0;
+}
+
+#dineWithUs>p:nth-child(3) {
+    color: var(--light-grey);
+    font-family: 'Roboto', regular;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    /* Espace en bas uniquement */
+    /* max-width: 600px; Gère la largeur pour une bonne lisibilité */
+}
+
+#dineWithUs input[type="button"] {
+    border-radius: 0px;
+}
+
+#dineWithUs img {
+    position: relative;
+    vertical-align: middle;
+    gap: 54px;
+}
+
+#dineWithUs a {
+    color: var(--dark);
+    font-family: 'Roboto', regular;
+    font-size: 15px;
+    text-decoration: none;
+    gap: 10px;
+    /* Espace entre l'icône et le texte */
+}
+
+
+/* ########### */
+/* about */
+/* ########### */
+
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: calc(480px + 248px);
+    width: 100%;
+}
+
+#about>p:nth-child(1) {
+    color: var(--description-grey);
+    font-family: 'Roboto', regular;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+#about>p:nth-child(2) {
+    position: relative;
+    color: var(--dark);
+    font-family: 'Rufina', bold;
+    font-size: 42px;
+    margin: 0 0 15px;
+    top: 34px;
+}
+
+#about>p:nth-child(3) {
+    position: relative;
+    width: 850px;
+    color: var(--description-grey);
+    font-family: 'Roboto', light;
+    font-size: 15px;
+    text-align: center;
+    top: 72px;
+}
+
+#about>input {
+    position: relative;
+    top: 142px;
+}
+
+/* ########### */
+/* caroussel */
+/* ########### */
+
+
+#caroussel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: calc(806px + 248px);
+    gap: 4px;
+
+}
+
+.hoverContent {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hoverInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hoverContent:hover .hoverInfo {
+
+    background-color: var(--basic-green-hover);
+    opacity: 90%;
+    visibility: visible;
+}
+
+.hoverInfo p,
+.hoverInfo img {
+    opacity: 1;
+    filter: invert();
+}
+
+.hoverInfo img {
+    width: 47px;
+    height: 47px;
+}
+
+.hoverInfo p {
+    position: relative;
+    font-family: 'Rufina', bold;
+    font-size: 22px;
+    margin: 0;
+    top: 24px;
+}
+
+
+/* ########### */
+/* popularPlates */
+/* ########### */
+
+
+#popularPlates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: calc(945px + 248px);
+}
+
+#popularPlates>p:nth-child(1) {
+    color: var(--dark-grey);
+    font-family: 'Rufina', bold;
+    font-size: 42px;
+    margin: 0;
+}
+
+#popularPlates>p:nth-child(2) {
+    position: relative;
+    color: var(--description-grey);
+    font-family: 'Roboto', light;
+    font-size: 15px;
+    margin: 0;
+    top: 29px;
+    width: 633px;
+    text-align: center;
+}
+
+#popularPlates>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 84px;
+}
+
+#popularPlatesImg {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 584px;
+    width: 360px;
+    border: 1px var(--border) solid;
+    text-align: center;
+}
+
+.card>img {
+    position: relative;
+    width: 321px;
+    height: 265px;
+}
+
+.card>p:nth-child(2) {
+    position: relative;
+    color: var(--dark-grey);
+    font-family: 'Rufina', bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.card>p:nth-child(3) {
+    position: relative;
+    color: var(--description-grey);
+    font-family: 'Roboto', light;
+    font-size: 14px;
+    margin: 0;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.card:hover {
+    border: none;
+    box-shadow: 0 8px 16px var(--border);
+}
+
+.orderBtn {
+    position: relative;
+    background-color: var(--idle-btn);
+    bottom: 22px;
+}
+
+.orderBtn:hover {
+    background-color: var(--basic-green-hover);
+}
+
+
+/* ########### */
+/* quotes */
+/* ########### */
+
+
+#quotes {
+    background-color: var(--bg-quotes);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: calc(1159px + 248px);
+    height: 714px;
+}
+
+#quotes>p:nth-child(2) {
+    width: 960px;
+    position: relative;
+    text-align: center;
+    color: var(--dark-grey);
+    font-family: 'Rufina', regular;
+    font-size: 18px;
+    margin: 0;
+    gap: 20px;
+    top: 50px;
+}
+
+#quotes>img:nth-child(3){
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 100px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 130px
+}
+
+.name:nth-child(1){
+    color: var(--dark-grey);
+    font-family: 'Rufina', regular;
+    font-size: 22px;
+    margin: 0;
+}
+
+.name>p:nth-child(2){
+    color: var(--dark-grey);
+    font-family: 'Roboto', light;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.selectedCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 14px;
+    top: 189px;
+}
+
+/* ########### */
+/* speakAboutUs */
+/* ########### */
+
+
+#speakAboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: calc(1435px + 248px);
+}
+
+#speakAboutUs>p:nth-child(1) {
+    color: var(--dark-grey);
+    font-family: 'Rufina', bold;
+    font-size: 42px;
+    margin: 0;
+}
+
+#speakAboutUs>p:nth-child(2) {
+    position: relative;
+    color: var(--description-grey);
+    font-family: 'Roboto', light;
+    font-size: 15px;
+    top: 28px;
+    margin: 0;
+    width: 653px;
+    text-align: center;
+}
+
+#speakAboutUs>* {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#speakAboutUsImg {
+    position: relative;
+    top: 92px;
+    gap: 32px;
+}
+
+.card2>img {
+    width: 360px;
+    height: 467px;
+}
+
+.card2:hover {
+    .speakCard {
+        height: 172px;
+        transform: translate(30px, -86px);
+        box-shadow: 0 8px 16px var(--border);
+    }
+
+    .icon>a>img {
+        visibility: visible;
+    }
+}
+
+
+.speakCard {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 122px;
+    transform: translate(30px, -61px);
+
+}
+
+.speakCard>p:nth-child(1) {
+    color: var(--dark-grey);
+    font-family: 'Rufina', bold;
+    font-size: 22px;
+    margin: 0;
+}
+
+.speakCard>p:nth-child(2) {
+    position: relative;
+    top: 13px;
+    color: var(--description-grey);
+    font-family: 'Roboto', light;
+    font-size: 15px;
+    margin: 0;
+}
+
+.icon {
+    /* visibility: hidden; */
+    position: relative;
+    top: 32px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon>a {
+    width: 31px;
+    height: 31px;
+}
+
+.icon>a>img {
+    visibility: hidden;
+    width: 31px;
+    height: 31px;
+}
+
+.icon>a>img:hover {
+    /* filter: invert(); */
+    background-color: var(--basic-green-hover);
+    border-radius: 40px;
+}
+
+/* ########### */
+/* form */
+/* ########### */
+
+
+#containerForm {
+    background-color: var(--bg-form);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: calc(1649px + 248px);
+}
+
+#containerForm>img {
+    flex: 1;
+}
+
+/* Form Container Styling */
+#form {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 643px;
+    padding: 53px 393px 130px 101px;
+}
+
+/* Input Styling */
+#form input:not([type="button"]) {
+    position: relative;
+    flex: 1 1 calc(50%);
+    background-color: var(--bg-form, #f8f8f8);
+    color: var(--description-grey, #888);
+    font-family: 'Roboto', regular;
+    border: 0px 0px 1px 0px solid var(--dark-grey, #333);
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 321px;
+    height: 20px;
+
+}
+
+#form input:nth-last-child(2) {
+    top: 9px;
+    flex: 1 1 calc(100%);
+}
+
+#form input[type="button"] {
+    width: 201px;
+    height: 51px;
+    position: absolute; /* Positionnement absolu */
+    bottom: 0; /* En bas du conteneur */
+    background-color: #006400; /* Bouton vert foncé */
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    bottom: 100px;
+}
+
+
+/* ########### */
+/* footer */
+/* ########### */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: calc(1704px + 248px);
+    height: 461px;
+}
+
+footer>nav {
+    position: relative;
+    right: 0;
+    top: 65px;
+    /* bottom: 48px; */
+}
+.iconFooter{
+    display: flex;
+    gap: 30px;
+}
+.iconFooter>img {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    top: 134px;
+}
