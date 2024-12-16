@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" defer>
+</head>
+
+<body>
+    <div id="formContainer" >
+        <h2>Register</h2><br>
+        <form action="./" id="registerForm">
+            <input type="text" name="firstName" id="firstName" placeholder="John" required>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe" required><br>
+
+            <input list="select-gender" placeholder="select a gender" required>
+            <datalist id="select-gender">
+                <option value="Male"></option>
+                <option value="Female"></option>
+                <option value="Other (precise)"></option>
+            </datalist><br>
+
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+33601020304" pattern="^\+\d{11}" required><br>
+
+            <input type="email" name="mail" id="mail" placeholder="johndoe@mail.com" pattern=".*@{1}\w.*\.{1}\w{2,}" required><br>
+
+            <label for="birthday">Birth date</label><br>
+            <input type="date" name="birthday" id="birthday" required><br>
+
+            <input type="button" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

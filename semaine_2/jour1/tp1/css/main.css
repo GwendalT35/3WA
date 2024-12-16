@@ -1,0 +1,163 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section de notification */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    border: 1px solid transparent;
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translate(-50%, -30px);
+}
+
+.notification.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.notification.error {
+    background-color: #d32f2f;
+    border-color: red;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Section des tâches */
+#list {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Priorités */
+.highPriority {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.mediumPriority {
+    color: #f9a825;
+}
+
+.lowPriority {
+    color: #388e3c;
+}
+
+/* Checkbox des tâches */
+.taskCheckbox {
+    transform: scale(1.2);
+}
+
+/* Section du formulaire */
+#form {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Bouton de suppression */
+input[type="submit"][value="Supprimer toutes les tâches"] {
+    background-color: #d32f2f;
+}
+
+input[type="submit"][value="Supprimer toutes les tâches"]:hover {
+    background-color: #c62828;
+}
