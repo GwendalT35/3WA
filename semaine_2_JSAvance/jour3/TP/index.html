@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3</title>
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Selection des régions et départements</h2>
+        <div id="form">
+            <h2>Choisissez votre région et département</h2>
+            <select name="regionList" id="regionList">
+                <option value="null">Liste des régions</option>
+            </select>
+            <select name="departementList" id="departementList">
+                <option value="null">Liste des départements</option>
+            </select>
+            <input type="submit" value="Afficher les communes" id="showCommunes">
+            <input type="submit" value="Récupérer votre localisation" id="getLocalisation">
+        </div>
+        
+        <div>
+            <h2>Liste des communes</h2>
+            <div id="communeList"></div>
+        </div>
+    </div>
+</body>
+</html>
