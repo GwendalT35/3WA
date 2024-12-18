@@ -1,0 +1,484 @@
+{
+    "shapes": [
+        {
+            "type": "Rectangle",
+            "properties": [
+                955,
+                272,
+                28,
+                43
+            ],
+            "color": "#369b21"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                332,
+                655,
+                312,
+                119
+            ],
+            "color": "#9fad07"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                1160,
+                633,
+                19
+            ],
+            "color": "#cfce4d"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                769,
+                24,
+                45
+            ],
+            "color": "#bdb3d3"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                368,
+                462,
+                140,
+                117
+            ],
+            "color": "#7f7d80"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                863,
+                68,
+                93,
+                165
+            ],
+            "color": "#89554c"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                1043,
+                481,
+                11
+            ],
+            "color": "#18db59"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1012,
+                170,
+                233,
+                112
+            ],
+            "color": "#47381b"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                184,
+                400,
+                36
+            ],
+            "color": "#9c2c36"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                270,
+                261,
+                52
+            ],
+            "color": "#e800c8"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                169,
+                376,
+                18
+            ],
+            "color": "#956fd7"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                995,
+                516,
+                49
+            ],
+            "color": "#0565f2"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                609,
+                718,
+                23,
+                80
+            ],
+            "color": "#3cb1db"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                634,
+                599,
+                214,
+                94
+            ],
+            "color": "#b159a3"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                635,
+                206,
+                59,
+                163
+            ],
+            "color": "#b3314b"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1023,
+                657,
+                289,
+                170
+            ],
+            "color": "#27adac"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                61,
+                595,
+                252,
+                103
+            ],
+            "color": "#203d5b"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                81,
+                277,
+                269,
+                144
+            ],
+            "color": "#dd471f"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                82,
+                183,
+                15
+            ],
+            "color": "#0aff92"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                760,
+                484,
+                49,
+                53
+            ],
+            "color": "#2f13a4"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                610,
+                442,
+                84,
+                176
+            ],
+            "color": "#4de9da"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                1238,
+                385,
+                8
+            ],
+            "color": "#a7a93c"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                445,
+                409,
+                31,
+                43
+            ],
+            "color": "#4c58ef"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1150,
+                104,
+                299,
+                16
+            ],
+            "color": "#c2c504"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                913,
+                251,
+                133,
+                177
+            ],
+            "color": "#fd344c"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                10,
+                696,
+                237,
+                169
+            ],
+            "color": "#9b2e29"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                301,
+                491,
+                250,
+                72
+            ],
+            "color": "#46ccda"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1180,
+                255,
+                87,
+                110
+            ],
+            "color": "#70e01e"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                412,
+                53,
+                13,
+                56
+            ],
+            "color": "#8ce9c3"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                599,
+                314,
+                241,
+                103
+            ],
+            "color": "#262482"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                315,
+                397,
+                239,
+                60
+            ],
+            "color": "#fc98de"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                717,
+                158,
+                273,
+                93
+            ],
+            "color": "#716601"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                814,
+                73,
+                29
+            ],
+            "color": "#c768fd"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                562,
+                229,
+                65
+            ],
+            "color": "#46ca34"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                159,
+                519,
+                7
+            ],
+            "color": "#8fceae"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1056,
+                559,
+                95,
+                28
+            ],
+            "color": "#81428f"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                289,
+                155,
+                5
+            ],
+            "color": "#8ce47b"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                266,
+                464,
+                65
+            ],
+            "color": "#7ba777"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                185,
+                305,
+                256,
+                99
+            ],
+            "color": "#69525e"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                219,
+                441,
+                58
+            ],
+            "color": "#c6145e"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                127,
+                248,
+                152,
+                137
+            ],
+            "color": "#dfbfd4"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                425,
+                436,
+                17
+            ],
+            "color": "#0f6257"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                17,
+                22,
+                70
+            ],
+            "color": "#1ace16"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                1062,
+                444,
+                62
+            ],
+            "color": "#80a466"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                595,
+                684,
+                15
+            ],
+            "color": "#39f720"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                577,
+                301,
+                141,
+                61
+            ],
+            "color": "#725c36"
+        },
+        {
+            "type": "Circle",
+            "properties": [
+                1277,
+                210,
+                55
+            ],
+            "color": "#6913cc"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                1143,
+                473,
+                86,
+                88
+            ],
+            "color": "#c18928"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                131,
+                410,
+                69,
+                74
+            ],
+            "color": "#5046a9"
+        },
+        {
+            "type": "Rectangle",
+            "properties": [
+                450,
+                424,
+                172,
+                160
+            ],
+            "color": "#6b0fe6"
+        }
+    ]
+}
