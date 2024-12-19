@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <script type="module" src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur pour le message d'erreur -->
+    <div id="errorMessageContainer"></div>
+
+    <!-- Formulaire de recherche -->
+    <form>
+        <button type="button" id="btnLocation">Me géolocaliser</button>
+
+        <label for="searchAddress">Chercher des cinémas proches d'une adresse</label>
+        <input type="search" placeholder="L'adresse recherchée" id="searchAddress">
+
+        <label for="inputRange">Distance en km</label>
+        <input type="range" value="10" id="inputRange">
+
+        <button type="submit" id="searchNearCinema">Rechercher</button>
+    </form>
+
+    <!-- Conteneur pour la liste des cinémas -->
+    <div id="cinemaContainer"></div>
+
+    <!-- Conteneur pour la carte -->
+    <div id="map"></div>
+</body>
+</html>
