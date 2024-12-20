@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP 3 : API découpage administratif</title>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <h1>TP 3 : API découpage administratif</h1>
+    
+    <form id="get-cities-form">
+        <fieldset>
+            <legend>Choix de la région</legend>
+            <label for="regions">Liste des régions</label>
+            <select name="regions" id="regions"></select>
+        </fieldset>
+        <fieldset>
+            <legend>Choix du département</legend>
+            <label for="departments">Liste des départements</label>
+            <select name="departments" id="departments"></select>
+        </fieldset>
+        <button>Afficher les villes</button>
+    </form>
+    
+    <ol id="cities-list"></ol>
+</body>
+</html>
