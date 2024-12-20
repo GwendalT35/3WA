@@ -1,0 +1,118 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Centrer les éléments */
+#webCamList, 
+#validateWebcam, 
+#takeScreenshot, 
+#btnSaveScreenshot {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style du bouton */
+input[type="button"] {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+input[type="button"]:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Style de la liste déroulante */
+#webCamList {
+    width: 250px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #ecf0f1;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#webCamList:hover,
+#webCamList:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Style de la vidéo */
+video {
+    margin: 20px 0;
+    width: 400px;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du conteneur de capture */
+#screenshotContainer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Masquer les éléments par défaut */
+.hidden {
+    display: none;
+}
+
+/* Style du canvas */
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #1abc9c;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton Sauver Image */
+#btnSaveScreenshot {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#btnSaveScreenshot:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Style pour les écrans mobiles */
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+    }
+
+    #webCamList {
+        width: 100%;
+    }
+
+    #screenshotContainer {
+        padding: 10px;
+    }
+}
